@@ -55,6 +55,10 @@ Header img {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+.card:hover {
+  cursor: pointer;
+}
+
 .right-content {
   width: 50%;
   text-align: center;
@@ -66,6 +70,7 @@ Header img {
 
 .right-content img {
   margin: 2rem;
+  height: 190px;
 }
 
 .right-content h1 {
@@ -75,7 +80,7 @@ Header img {
 }
 
 .abilities {
-  width: 30%;
+  width: 40%;
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -87,7 +92,7 @@ Header img {
   background-color: #dc2f02;
   color: white;
   padding: 0.5rem;
-  font-size: 12px;
+  font-size: 10.5px;
   border-radius: 8px;
 }
 

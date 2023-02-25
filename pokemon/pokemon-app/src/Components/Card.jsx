@@ -1,12 +1,25 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({pokemon, loading, infoPokemon}) => {
   return (
-    <div className='card'>
-        <h2>1</h2>
-        <img src="./images/charmander.png" alt="charmander" />
-        <h2>Charmander</h2>
-    </div>
+    <>
+    {
+      loading? <h1>Loading...</h1>:
+      pokemon.map((item)=> {
+       // console.log('Card Item', item)
+        return (
+          <>
+              <div className='card' key={item.id} onClick={()=>infoPokemon(item)}>
+                <h2>{item.id}</h2>
+                <img src={item.sprites.front_default} alt="" />
+                <h2>{item.name}</h2>
+              </div>
+          </>
+        )
+      })
+    }
+    
+    </>
   )
 }
 
