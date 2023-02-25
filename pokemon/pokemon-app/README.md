@@ -11,4 +11,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - The App also contains two buttons **Next** and **Previous** to toggle to other pages
 
- ![image 2](./src/images/image-2.jpg)
+  ![image 2](./src/images/image-2.jpg)
